@@ -8,6 +8,7 @@ public class DepositCalculator {
     }
     double calculateSimplePercent(double amount, double yearRate, int depositPeriod) {
         return round(amount + amount * yearRate * depositPeriod, 2);
+/* Я тоже вначале называл переменную round, но вроде как по смыслу подходить "rewards" */
     }
     double round(double value, int places) {
         double scale = Math.pow(10, places);
