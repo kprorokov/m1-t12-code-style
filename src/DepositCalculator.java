@@ -5,7 +5,7 @@ public class DepositCalculator {
         new DepositCalculator().calculationOfDeposit();
     }
 
-    double calculateComplexPercent(double a, int day) {
+    double calculateComplexPercent(double a, int day) {     // Не ясно, что за переменная double a. Есть риск самому забыть, что это. Используем понятные названия переменных :)
 
         double pay = a * Math.pow((1 + 0.06 / 12), 12 * day);
         return reward(pay);
